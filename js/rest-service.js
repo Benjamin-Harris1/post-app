@@ -1,3 +1,5 @@
+"use strict";
+
 import { prepareData } from "./helper.js";
 
 const endpoint = "https://database-fce4a-default-rtdb.europe-west1.firebasedatabase.app/";
