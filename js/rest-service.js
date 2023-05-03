@@ -35,7 +35,6 @@ async function deletePost(id) {
 async function updatePost(id, title, body, image) {
   const postToUpdate = { title, body, image }; // post update to update
   const json = JSON.stringify(postToUpdate); // convert the JS object to JSON string
-  // PUT fetch request with JSON in the body. Calls the specific element in resource
   const response = await fetch(`${endpoint}/posts/${id}.json`, {
     method: "PUT",
     body: json,
